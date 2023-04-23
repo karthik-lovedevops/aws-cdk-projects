@@ -14,13 +14,13 @@ class CdkProjectStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
-        queue = sqs.Queue(
-            self, "CdkProjectQueue",
-            visibility_timeout=Duration.seconds(300),
-        )
+        # queue = sqs.Queue(
+        #     self, "CdkProjectQueue",
+        #     visibility_timeout=Duration.seconds(300),
+        # )
 
-        topic = sns.Topic(
-            self, "CdkProjectTopic"
-        )
+        # topic = sns.Topic(
+        #     self, "CdkProjectTopic"
+        # )
 
-        topic.add_subscription(subs.SqsSubscription(queue))
+        # topic.add_subscription(subs.SqsSubscription(queue))
