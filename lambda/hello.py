@@ -11,5 +11,5 @@ def handler(event, context):
         'headers': {
             'Content-Type': 'text/plain'
         },
-        'body': 'Hello, CDK! You have hit {}\n'.format(event['path'])
+        'body': 'Hello, CDK! through gh actions.You have hit from {}\n'.format(event['path'])
     }
