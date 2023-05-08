@@ -1,0 +1,8 @@
+name: hello-app
+
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - myappfolder
